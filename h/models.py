@@ -6,6 +6,7 @@ from h.api import models as api_models
 from h.api.nipsa import models as nipsa_models
 from h.groups import models as groups_models
 from h.notification import models as notification_models
+from h.badge import models as badge_models
 
 __all__ = (
     'Activation',
@@ -28,6 +29,7 @@ Group = groups_models.Group
 NipsaUser = nipsa_models.NipsaUser
 Subscriptions = notification_models.Subscriptions
 User = accounts_models.User
+BadgeBlocklist = badge_models.BadgeBlocklist
 
 
 class Client(object):
