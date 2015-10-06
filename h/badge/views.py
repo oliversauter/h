@@ -6,7 +6,7 @@ from h.api.resources import Root
 from h.api import search as search_lib
 
 
-@api_config(context=Root, name='badge')
+@api_config(context=Root, name='badge', http_cache=(60 * 5, {'private': True}))
 def badge(request):
     """Return the number of public annotations on a given page.
 
