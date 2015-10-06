@@ -29,7 +29,7 @@ Group = groups_models.Group
 NipsaUser = nipsa_models.NipsaUser
 Subscriptions = notification_models.Subscriptions
 User = accounts_models.User
-BadgeBlocklist = badge_models.BadgeBlocklist
+Blocklist = badge_models.Blocklist
 
 
 class Client(object):
