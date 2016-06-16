@@ -130,6 +130,7 @@ search
        our search query and we're retrieving up to 30 annotations at a time,
        then to retrieve the last 5 do: ``/api/search?limit=30&offset=60``.
        (Default: 0)
+       
 
    :query sort: Specify which field the annotations should be sorted by. For
        example to sort annotations by the name of the user that created them,
@@ -157,6 +158,8 @@ search
 
    :query text: Search for annotations whose body text contains some text,
        for example: ``/api/search?text=foobar``
+       
+   :query group: You can filter annotations also by the groups in which they are posted by using the parameter ``/api/search?group=GROUPID``
 
    :query any: Search for annotations whose ``quote``, ``tags``, ``text``,
        ``uri.parts`` or ``user`` fields match some query text.
@@ -166,6 +169,8 @@ search
 
       This parameter is treated specially. We're holding off documenting it for
       now because upcoming work on document equivalence is likely to change it.
+      
+      
 
    You can also search for any other field that you see in annotations returned
    by the h API. Visit ``/api/search`` with no parameters to see some
